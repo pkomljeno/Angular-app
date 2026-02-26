@@ -249,7 +249,7 @@ export class AppComponent implements OnInit {
   }
 
   async toggleRow(row: any, event?: MouseEvent) {
-  event?.stopPropagation(); // prevent clicks from bubbling up from inner content
+  event?.stopPropagation(); 
 
   if (this.expandedElement && this.expandedElement === row) {
     this.expandedElement = null; // collapse
